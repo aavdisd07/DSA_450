@@ -6,8 +6,8 @@ import java.util.Queue;
 class Rescue {
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 1, 1, 3, 3};
-        int[] arr2 = {3, 1, 2, 2, 3, 3};
+        int[] arr ={0,0,0, 1, 3, 3};
+        int[] arr2 = { 0,0,0, 2, 3, 3};
         int[] add_p = {2, 0, 1};
         Queue<Integer> a = new LinkedList<>();
         Queue<Integer> b = new LinkedList<>();
@@ -19,8 +19,26 @@ class Rescue {
             b.add(i);
         }
         if(a.contains(0)|| b.contains(0)){
+         for(int i=0;i<add_p.length;i++){
+            if(add_p[i]%2==0){
+               while(add_p[i]!=0){
+               if(a.contains(0)){
+                a.poll();
+                a.add(3-i);
+                add_p[i]--;
+               }
+                b.poll();
+                b.add(3-i);
+                add_p[i]--;
+               }
+            }
+            else{
+              a.poll();
+              a.add(3-i);
 
+            }
 
+         }
 
             
         }
