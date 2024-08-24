@@ -2,11 +2,13 @@ package SortingAlgorithm;
 
 
 public class CountingSortclear {
-
+ //this is for range elemnts only  
+ 
     static void counting(int[] arr) {
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
             max = Math.max(arr[i], max);
+            //to find the max element in the array
         }
         int count[] = new int[max + 1];
         for (int i = 0; i < arr.length; i++) {
