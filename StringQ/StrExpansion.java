@@ -1,3 +1,4 @@
+package StringQ;
 
 class StrExpansion {
 

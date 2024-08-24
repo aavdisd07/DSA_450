@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class FindDuplicateInArray {
     static void findDuplicate(int arr[]) {

@@ -1,3 +1,4 @@
+package StringQ;
 public class StrCompression {
 
     public static void main(String[] args) {

@@ -3,7 +3,6 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
 
 public class doUnion {
    static int FindUnionLengthSimple(int arr1[],int arr2[]){
