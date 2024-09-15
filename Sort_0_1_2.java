@@ -10,19 +10,18 @@ class Sort_012{
         int low=0;
         int high=l-1;
         while(mid<=high){
-           if(arr[mid]==0){
-            swap(arr,mid,low);
-            mid++;
-            low++;
-           }
-           else if(arr[mid]==1){
-            mid++;
-           }
-           else{
-            swap(arr,mid,high);
-            high--;
-
-           }
+            switch (arr[mid]) {
+                case 0 -> {
+                    swap(arr,mid,low);
+                    mid++;
+                    low++;
+                }
+                case 1 -> mid++;
+                default -> {
+                    swap(arr,mid,high);
+                    high--;
+                }
+            }
 
         }
         for(int j:arr){
@@ -30,7 +29,8 @@ class Sort_012{
         }
     }
     public static void main(String[] args) {
-        int arr[]={0,1,2,1,2,1,2,2,1,1,1,1,1,0,0,0,1,0,2,1,0};
+        // int arr[]={0,1,2,1,2,1,2,2,1,1,1,1,1,0,0,0,1,0,2,1,0};
+        int arr[]={1,0,1,0,0,2,2,0};
         sort(arr,arr.length);
 
     }
