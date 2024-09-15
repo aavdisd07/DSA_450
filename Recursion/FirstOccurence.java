@@ -44,7 +44,7 @@ class FirstOccurence{
             return 1;
         }
         int halfpower=OptimizePower(a, p/2);
-       int halfpowerSqr=halfpower * halfpower;
+        int halfpowerSqr=halfpower * halfpower;
         if(p%2==0){
             return halfpowerSqr;
         }
