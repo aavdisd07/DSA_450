@@ -1,7 +1,7 @@
 package DivideAndConquer;
 
 public class SIRSA {
-
+    //   Search Element in Rotated sorted Array
     static int Search(int arr[], int si, int ei, int target) {
         // base case
         if (si > ei) {

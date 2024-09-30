@@ -39,8 +39,8 @@ public class KthNonRepeatingChar {
     }
 
     public static void main(String[] args) {
-        String s = "avantika";
-        System.out.println(firstNonRepeatingChar(s,4));
+        String s = "amazom";
+        System.out.println(firstNonRepeatingChar(s,1));
         System.out.println(SecondApproach(s,1));
     }
 }
